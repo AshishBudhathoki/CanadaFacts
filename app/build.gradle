@@ -103,7 +103,6 @@ dependencies {
     kapt appDependencies.dagger2Processor
     implementation appDependencies.dagger2Support
 
-
     //Multidex
     implementation appDependencies.multidex
 
