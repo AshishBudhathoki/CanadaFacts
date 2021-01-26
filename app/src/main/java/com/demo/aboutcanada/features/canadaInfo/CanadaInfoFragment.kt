@@ -6,6 +6,7 @@ import androidx.core.view.isVisible
 import androidx.fragment.app.viewModels
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
+import androidx.recyclerview.widget.RecyclerView
 import com.demo.aboutcanada.R
 import com.demo.aboutcanada.base.BaseFragment
 import com.demo.aboutcanada.commons.Error
@@ -112,9 +113,10 @@ class CanadaInfoFragment : BaseFragment() {
             if (layoutError.isVisible) {
                 layoutError.hide()
             }
-
             rvCanadaInfo.apply {
                 adapter = canadaInfoAdapter
+                canadaInfoAdapter.stateRestorationPolicy =
+                    RecyclerView.Adapter.StateRestorationPolicy.PREVENT_WHEN_EMPTY
                 initRecyclerViewWithLineDecoration(activity?.baseContext!!)
             }
         } else displayNoSearchResults()

@@ -76,7 +76,8 @@ dependencies {
     implementation appDependencies.constraintLayout
     implementation appDependencies.supportV4
     implementation appDependencies.cardview
-    implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-core:1.3.2'
+    implementation appDependencies.androidxRecyclerView
+    implementation appDependencies.kotlinxCore
 
     //Jetpack suits libs
     implementation appDependencies.lifecycleExtensions
