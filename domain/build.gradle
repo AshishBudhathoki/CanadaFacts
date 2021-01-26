@@ -1,0 +1,26 @@
+plugins {
+    id 'java-library'
+    id 'kotlin'
+    id 'kotlin-kapt'
+}
+dependencies {
+    def domainDependencies = rootProject.ext.domainDependencies
+
+    //Standards
+    implementation domainDependencies.kotlin
+    implementation domainDependencies.javaxInject
+
+    //Local libs
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+
+    //Work managers
+    implementation domainDependencies.coroutinesCore
+}
+
+sourceCompatibility = "8"
+targetCompatibility = "8"
+
+sourceSets {
+    main.java.srcDirs += 'src/main/kotlin'
+    test.java.srcDirs += 'src/test/kotlin'
+}
