@@ -1,8 +1,8 @@
 ext {
     //Android Core
     compileSdkVersion = 29
-    targetSdkVersion = 29
-    minSdkVersion = 19
+    targetSdkVersion = 16
+    minSdkVersion = 16
     buildToolsVersion = "29.0.2"
 
     //Libraries
