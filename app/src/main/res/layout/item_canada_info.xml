@@ -1,6 +1,52 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/containerTrendingRepo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?android:attr/selectableItemBackground"
+        android:padding="@dimen/md_margin_padding_size_medium">
+
+        <ImageView
+            android:id="@+id/ivImage"
+            android:layout_width="@dimen/dimen_image"
+            android:layout_height="@dimen/dimen_image"
+            android:contentDescription="@string/content_desc_image"
+            android:paddingLeft="@dimen/md_margin_padding_size_small"
+            android:src="@drawable/ic_image_placeholder"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.demo.aboutcanada.widget.CustomTextView
+            android:id="@+id/tvTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:lines="1"
+            android:textColor="@color/colorSecondary"
+            android:textSize="@dimen/md_text_size_large"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:textFont="regular"
+            tools:text="Title" />
+
+
+        <com.demo.aboutcanada.widget.CustomTextView
+            android:id="@+id/tvDescription"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/md_margin_padding_size_small"
+            android:textColor="@color/colorGrey800"
+            android:textSize="@dimen/md_text_size_micro"
+            app:layout_constraintEnd_toStartOf="@+id/ivImage"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvTitle"
+            app:textFont="regular"
+            tools:text="A moose is a common sight in Canada. Tall and majestic, they represent many of the values which Canadians imagine that they possess. They grow up to 2.7 metres long and can weigh over 700 kg. They swim at 10 km/h. Moose antlers weigh roughly 20 kg. The plural of moose is actually 'meese', despite what most dictionaries, encyclopedias, and experts will tell you." />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>
