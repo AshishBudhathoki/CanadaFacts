@@ -22,4 +22,7 @@
     <!--Common Actions-->
     <string name="action_retry">Retry</string>
 
+    <!--  Data Binding String Templates-->
+    <string name="content_desc_image">Href Image</string>
+
 </resources>
