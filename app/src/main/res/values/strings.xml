@@ -1,4 +1,5 @@
 <resources>
+
     <string name="app_name">CanadaFacts</string>
     <!--Fonts-->
     <string name="roboto_thin" translatable="false">roboto_thin</string>
@@ -8,4 +9,17 @@
     <string name="roboto_bold" translatable="false">roboto_bold</string>
     <string name="roboto_regular_italic" translatable="false">roboto_italic</string>
     <string name="roboto_medium_italic" translatable="false">roboto_medium_italic</string>
+
+    <!--Common Info-->
+    <string name="info_again_exit">Press again to exit</string>
+    <string name="info_gamification_message">Don\'t worry, it\'s not you - it\'s us. Sorry about that.</string>
+
+    <!--Common Errors-->
+    <string name="error_no_browser">You don\'t have any browser to open web page</string>
+    <string name="error_something_went_wrong">Something went wrong..</string>
+    <string name="error_offline_test_scenario">Disable data connection to see offline behaviour</string>
+
+    <!--Common Actions-->
+    <string name="action_retry">Retry</string>
+
 </resources>
