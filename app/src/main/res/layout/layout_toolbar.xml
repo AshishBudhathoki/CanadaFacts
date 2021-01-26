@@ -15,7 +15,6 @@
         android:ellipsize="end"
         android:gravity="center"
         android:lines="1"
-        android:text="Canada"
         android:textColor="@color/colorSecondary"
         android:textSize="@dimen/md_text_size_large"
         app:textFont="medium" />
