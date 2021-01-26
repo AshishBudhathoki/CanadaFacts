@@ -55,7 +55,6 @@ dependencies {
     api dataDependencies.loggingInterceptor
     implementation dataDependencies.coroutinesCore
 
-
     //Room database
     implementation dataDependencies.roomRuntime
     kapt dataDependencies.roomCompiler
