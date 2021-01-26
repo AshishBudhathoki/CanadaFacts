@@ -19,10 +19,12 @@
     <string name="error_something_went_wrong">Something went wrong..</string>
     <string name="error_offline_test_scenario">Disable data connection to see offline behaviour</string>
 
+
     <!--Common Actions-->
     <string name="action_retry">Retry</string>
 
-    <!--  Data Binding String Templates-->
     <string name="content_desc_image">Href Image</string>
+    <string name="label_no_times">No Items Found</string>
+
 
 </resources>
