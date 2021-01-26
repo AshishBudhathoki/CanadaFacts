@@ -55,6 +55,6 @@ fun ImageView.loadImage(url: String) {
     GlideApp.with(context)
         .load(url)
         .diskCacheStrategy(DiskCacheStrategy.AUTOMATIC)
-        .error(ContextCompat.getDrawable(context, R.drawable.ic_image_placeholder))
+        .error(ContextCompat.getDrawable(context, R.drawable.ic_error_image))
         .into(this)
 }
