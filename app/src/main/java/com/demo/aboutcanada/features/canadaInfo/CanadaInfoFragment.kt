@@ -118,6 +118,7 @@ class CanadaInfoFragment : BaseFragment() {
                 canadaInfoAdapter.stateRestorationPolicy =
                     RecyclerView.Adapter.StateRestorationPolicy.PREVENT_WHEN_EMPTY
                 initRecyclerViewWithLineDecoration(activity?.baseContext!!)
+                rvCanadaInfo.recycledViewPool.setMaxRecycledViews(0, 0);
             }
         } else displayNoSearchResults()
 

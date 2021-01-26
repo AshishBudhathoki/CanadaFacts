@@ -34,13 +34,13 @@ class CanadaInfoAdapter @Inject constructor(
         RecyclerView.ViewHolder(itemView) {
         fun bind(canadaInfoUiModel: CanadaInfoUiModel) {
             itemView.apply {
-                canadaInfoUiModel.title?.let {
+                canadaInfoUiModel.title?.also {
                     tvTitle.text = it
                 } ?: tvTitle.hide()
-                canadaInfoUiModel.description?.let {
+                canadaInfoUiModel.description?.also {
                     tvDescription.text = it
                 } ?: tvDescription.hide()
-                canadaInfoUiModel.imageHref?.let {
+                canadaInfoUiModel.imageHref?.also {
                     ivImage.loadImage(it)
                 } ?: ivImage.hide()
             }
