@@ -24,6 +24,7 @@ ext {
     materialVersion = '1.1.0'
     leakCanaryVersion = '2.0'
     dagger2Version = '2.25.3'
+    dagger2Support = '2.23.2'
     lifecycleExtensionsVersion = '2.1.0'
     cardViewVersion = '1.0.0'
     glideVersion = '4.10.0'
@@ -82,7 +83,7 @@ ext {
             dagger2Processor       : "com.google.dagger:dagger-compiler:$dagger2Version",
             dagger2                : "com.google.dagger:dagger:$dagger2Version",
             dagger2Android         : "com.google.dagger:dagger-android:$dagger2Version",
-            dagger2Support         : "com.google.dagger:dagger-android-support:$dagger2Version",
+            dagger2Support         : "com.google.dagger:dagger-android-support:$dagger2Support",
             dagger2AndroidProcessor: "com.google.dagger:dagger-android-processor:$dagger2Version",
             lifecycleExtensions    : "androidx.lifecycle:lifecycle-extensions:$lifecycleExtensionsVersion",
             lifecycleViewModel     : "androidx.lifecycle:lifecycle-viewmodel-ktx:$lifecycleExtensionsVersion",

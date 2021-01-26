@@ -99,10 +99,9 @@ dependencies {
     //Dependency Injection
     implementation appDependencies.dagger2
     implementation appDependencies.dagger2Android
-    implementation appDependencies.dagger2Support
-
     kapt appDependencies.dagger2AndroidProcessor
     kapt appDependencies.dagger2Processor
+    implementation appDependencies.dagger2Support
 
 
     //Multidex
