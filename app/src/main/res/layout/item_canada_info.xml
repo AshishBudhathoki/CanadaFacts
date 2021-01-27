@@ -7,7 +7,7 @@
         android:id="@+id/containerTrendingRepo"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="?android:attr/selectableItemBackground"
+        android:background="@color/colorPrimary"
         android:padding="@dimen/md_margin_padding_size_medium">
 
         <ImageView
@@ -16,6 +16,7 @@
             android:layout_height="@dimen/dimen_image"
             android:contentDescription="@string/content_desc_image"
             android:paddingLeft="@dimen/md_margin_padding_size_small"
+            android:scaleType="fitXY"
             android:src="@drawable/ic_image_placeholder"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
