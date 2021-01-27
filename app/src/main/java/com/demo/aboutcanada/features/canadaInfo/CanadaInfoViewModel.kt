@@ -21,7 +21,6 @@ class CanadaInfoViewModel @Inject constructor(
     private val getToolbarTitleUseCase: GetToolbarTitleUseCase
 ) : UiStateViewModel() {
 
-    private val coroutineScope: CoroutineScope = CoroutineScope(Dispatchers.Main)
     private var searchJob: Job? = null
 
     val getCanadaInfoResults: LiveData<List<CanadaInfoUiModel>>
