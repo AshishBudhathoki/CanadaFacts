@@ -66,7 +66,7 @@ class CanadaInfoDataSource @Inject constructor(
     }
 
     /**
-     * Returns Toolbar titile from shared preferences
+     * Returns Toolbar title from shared preferences
      */
     fun getToolbarTitle(): ToolbarTitle {
         return ToolbarTitle(sharedPrefsHelper[SharedPrefsHelper.TOOLBAR_TITLE, "Toolbar"])

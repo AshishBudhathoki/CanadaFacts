@@ -16,7 +16,6 @@ object AppLogger {
      */
     @Volatile
     private var isDebugEnabled = true
-        set
 
     fun logD(tag: String?, msg: String?) {
         if (isDebugEnabled && tag != null && msg != null) {

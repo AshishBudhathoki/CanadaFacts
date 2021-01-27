@@ -2,7 +2,6 @@ package com.demo.aboutcanada.mapper
 
 import com.demo.aboutcanada.model.CanadaInfoUiModel
 import com.demo.aboutcanada.model.ToolbarTitleUiModel
-import com.demo.data.models.entity.CanadaInfoEntity
 import com.demo.domain.model.CanadaInfo
 import com.demo.domain.model.ToolbarTitle
 

@@ -1,7 +1,6 @@
 package com.demo.aboutcanada
 
 import android.os.SystemClock
-import android.util.Log
 import com.demo.aboutcanada.sample.apiSuccessResult
 import okhttp3.mockwebserver.Dispatcher
 import okhttp3.mockwebserver.MockResponse

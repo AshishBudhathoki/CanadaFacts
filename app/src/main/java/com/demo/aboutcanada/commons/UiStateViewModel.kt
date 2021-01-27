@@ -13,12 +13,12 @@ import kotlinx.coroutines.CoroutineExceptionHandler
 abstract class UiStateViewModel : ViewModel() {
 
     val uiState: LiveData<UiState>
-        get() = _uiState
+        get() = mutableLiveDataUiState
 
-    protected var _uiState = MutableLiveData<UiState>()
+    protected var mutableLiveDataUiState = MutableLiveData<UiState>()
 
     protected val handler = CoroutineExceptionHandler { _, exception ->
-        _uiState.value = Error(exception)
+        mutableLiveDataUiState.value = Error(exception)
     }
 
     abstract fun onDestroy(lifecycleOwner: LifecycleOwner)

@@ -1,6 +1,5 @@
 package com.demo.aboutcanada.di.modules
 
-import com.demo.aboutcanada.base.BaseFragment
 import com.demo.aboutcanada.di.modules.canadaInfo.CanadaInfoModule
 import com.demo.aboutcanada.features.canadaInfo.CanadaInfoFragment
 import dagger.Module

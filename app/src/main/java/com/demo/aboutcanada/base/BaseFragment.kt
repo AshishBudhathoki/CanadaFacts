@@ -22,11 +22,6 @@ abstract class BaseFragment : Fragment() {
         return inflater.inflate(layoutId(), container, false)
     }
 
-
-    open fun getActionBar(): ActionBar? {
-        return (activity as AppCompatActivity?)?.supportActionBar
-    }
-
     open fun onBackPressed() {}
 
 }

@@ -56,11 +56,11 @@ class CanadaInfoFragment : BaseFragment() {
 
 
     private fun observeApiResults() {
-        canadaInfoViewModel.getCanadaInfoResults.observe(viewLifecycleOwner, Observer {
+        canadaInfoViewModel.getCanadaInfoResults.observe(viewLifecycleOwner, {
             displayApiResults(it)
         })
 
-        canadaInfoViewModel.getToolbarTitle.observe(viewLifecycleOwner, Observer {
+        canadaInfoViewModel.getToolbarTitle.observe(viewLifecycleOwner, {
             displayToolbarTitle(it)
         })
 
@@ -118,7 +118,7 @@ class CanadaInfoFragment : BaseFragment() {
                 canadaInfoAdapter.stateRestorationPolicy =
                     RecyclerView.Adapter.StateRestorationPolicy.PREVENT_WHEN_EMPTY
                 initRecyclerViewWithLineDecoration(activity?.baseContext!!)
-                rvCanadaInfo.recycledViewPool.setMaxRecycledViews(0, 0);
+                rvCanadaInfo.recycledViewPool.setMaxRecycledViews(0, 0)
             }
         } else displayNoSearchResults()
 

@@ -1,6 +1,5 @@
 package com.demo.aboutcanada.di.modules
 
-import com.demo.aboutcanada.base.BaseActivity
 import com.demo.aboutcanada.di.ActivityScope
 import com.demo.aboutcanada.di.modules.canadaInfo.CanadaInfoModule
 import com.demo.aboutcanada.di.modules.canadaInfo.CanadaInfoRepositoryBindingModule

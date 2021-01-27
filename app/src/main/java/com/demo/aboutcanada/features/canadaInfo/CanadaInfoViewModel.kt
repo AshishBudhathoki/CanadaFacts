@@ -36,14 +36,14 @@ class CanadaInfoViewModel @Inject constructor(
         MutableLiveData()
 
     fun executeTrendingRepositorySearch(forceRefresh: Boolean = false) {
-        _uiState.value = Loading
+        mutableLiveDataUiState.value = Loading
         viewModelScope.launch(handler) {
             getCanadaInfoUseCase(forceRefresh).collect { canadaInfoList ->
                 getCanadaInfo.value = canadaInfoList.map { canadaInfo ->
                     canadaInfo.toPresentation()
                 }
             }
-            _uiState.value = Success
+            mutableLiveDataUiState.value = Success
             getToolbarTitleFromSource.value = getToolbarTitleUseCase.invoke().toPresentation()
         }
     }
